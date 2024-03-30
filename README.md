@@ -1,6 +1,8 @@
+---
+
 # User Authentication System with Neo4j and Express
 
-This is a basic user authentication system built using Node.js with Express framework, Neo4j as the database, and bcrypt for password hashing. This system allows users to register, login, and validates their credentials against the stored data in the Neo4j database.
+This is a basic user authentication system built using Node.js with the Express framework, Neo4j as the database, and bcrypt for password hashing. This system allows users to register, log in, and validate their credentials against the stored data in the Neo4j database.
 
 ## Prerequisites
 
@@ -13,9 +15,7 @@ Before running the application, ensure you have the following installed:
 ## Installation
 
 1. Clone or download the repository to your local machine.
-
 2. Navigate to the project directory in your terminal.
-
 3. Install dependencies using npm:
 
    ```
@@ -42,8 +42,14 @@ Before running the application, ensure you have the following installed:
 
 Once the application is running, you can access it in your web browser by navigating to `http://localhost:3000`.
 
-- `/register`: Register a new user by providing a username and password.
+- `/register`: Register a new user by providing a username, email, and password.
 - `/login`: Login with an existing username and password.
+
+## Folder Structure
+
+- `public`: Contains static files (e.g., CSS, client-side JavaScript).
+- `app.js`: Main application file where routes, middleware, and server setup are defined.
+- `package.json`: Contains metadata and dependencies information.
 
 ## Dependencies
 
@@ -53,15 +59,15 @@ Once the application is running, you can access it in your web browser by naviga
 - **neo4j-driver**: Official Neo4j Driver for JavaScript.
 - **path**: Provides utilities for working with file and directory paths.
 
-## Folder Structure
-
-- `public`: Contains static files (e.g., CSS, client-side JavaScript).
-- `app.js`: Main application file where routes, middleware, and server setup are defined.
-- `package.json`: Contains metadata and dependencies information.
-
 ## Contributing
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit pull requests.
 
+## Additional Notes
+
+- Ensure to keep your Neo4j database secure by following best practices for authentication and authorization.
+- For production use, consider adding additional security measures such as input validation and session management.
 
 Feel free to customize and extend this application according to your needs! If you have any questions or need further assistance, don't hesitate to reach out.
+
+---
